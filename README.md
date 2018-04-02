@@ -1,4 +1,4 @@
-# 알고리즘 Algorithm
+# 알고리즘 Algorithm in Java
 
 - DFS : Depth First Search
 - BFS : Breadth First Search
