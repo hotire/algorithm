@@ -10,15 +10,13 @@ hotire blog : https://blog.naver.com/gngh0101
 
 
 
+### Scanner vs BufferedReader
 
 **Scanner**
 
 1. 정규 표현을 이용해 구문 분석과 데이터 파싱하는 작업 수행
-
 2. 동기화 되지 않아서, 멀티 스레드에 안전하지 않다.
-
 3. 버퍼 크기가 작다.(1KB)
-
 4. 개발자가 Exception Handling 하지 않는다. 
 
 
