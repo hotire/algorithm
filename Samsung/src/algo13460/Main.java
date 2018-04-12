@@ -10,7 +10,7 @@ import java.util.StringTokenizer;
 /**
  * 
  * @author : hoTire
- * @comment : 13460
+ * @comment : 13460, Samsung DFS
  */
 class Pair {
 	int x;
@@ -78,6 +78,7 @@ public class Main {
 		Pair red = new Pair(cRed.x, cRed.y);
 		Pair blue = new Pair(cBlue.x, cBlue.y);
 				
+		/* 4방향 */
 		if (index == 0 ) {
 			int x = blue.x;
 			for (int j = blue.y+1; j < M; j++) {
@@ -176,7 +177,7 @@ public class Main {
 			}
 		}
 		
-		
+		/* 위치 조정 */
 		if (red.x == blue.x && red.y == blue.y) {
 			if (MAP[red.x][red.y] == '.') {
 				int yCom = cRed.y - cBlue.y;
@@ -200,6 +201,7 @@ public class Main {
 			}
 		}
 		
+		/* 4방향 DFS */
 		dfs(count+1,0,red,blue);
 		dfs(count+1,1,red,blue);
 		dfs(count+1,2,red,blue);
