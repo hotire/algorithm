@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * @author : hotire
+ * http://tech.kakao.com/2018/09/21/kakao-blind-recruitment-for2019-round-1/
  */
 public class Solution {
     public String[] solution(String[] record) {
@@ -12,7 +13,6 @@ public class Solution {
         return answer;
     }
 }
-
 class OpenChattingManager {
     private Map<String,String> users = new HashMap<String,String>();
     private Map<String,String> operationsOfRegister = new HashMap<>();
