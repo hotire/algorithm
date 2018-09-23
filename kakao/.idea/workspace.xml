@@ -84,6 +84,11 @@
             <path>
               <item name="kakao" type="b2602c69:ProjectViewProjectNode" />
               <item name="kakao" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kakao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kakao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -170,16 +175,15 @@
       <option name="presentableId" value="Default" />
       <updated>1537633548582</updated>
       <workItem from="1537633550359" duration="451000" />
-      <workItem from="1537715403696" duration="3282000" />
+      <workItem from="1537715403696" duration="3448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3733000" />
+    <option name="totallyTimeSpent" value="3899000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="48" width="1504" height="781" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
