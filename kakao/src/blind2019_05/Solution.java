@@ -21,10 +21,8 @@ class TreeNode implements Comparable<TreeNode> {
     }
 }
 
-
 class BinaryTree {
     private TreeNode root;
-    private int[][] order;
     public List<Integer> preTree = new ArrayList<>();
     public List<Integer> postTree = new ArrayList<>();
 
