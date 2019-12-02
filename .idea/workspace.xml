@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ff7732-710f-4f61-8707-7e24a49b8a77" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/kakao/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kakao/src/blind2019_02/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kakao/src/blind2019_03/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kakao/src/blind2020_01/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kakao/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kakao/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kakao/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -110,8 +97,8 @@
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -274,12 +261,12 @@
       <updated>1566910876469</updated>
       <workItem from="1566910880517" duration="152000" />
       <workItem from="1575207794238" duration="6830000" />
-      <workItem from="1575296779365" duration="511000" />
+      <workItem from="1575296779365" duration="793000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7493000" />
+    <option name="totallyTimeSpent" value="7775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="31" y="118" width="1260" height="582" extended-state="0" />
@@ -296,10 +283,10 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32922536" />
       <window_info anchor="bottom" id="CheckStyle" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.385567" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.56082475" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25779969" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25779969" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -491,8 +478,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+        <state relative-caret-position="120">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
         </state>
       </provider>
     </entry>
