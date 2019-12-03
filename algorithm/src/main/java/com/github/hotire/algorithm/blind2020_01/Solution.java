@@ -1,6 +1,8 @@
 package com.github.hotire.algorithm.blind2020_01;
 
 
+import java.util.Map;
+import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
 class Solution {
@@ -20,7 +22,7 @@ class Solution {
 
             if (cnt > 0) {
               length -= i * cnt;
-              length += (int)(Math.log10(cnt) + 1);
+              length += (int)(Math.log10(cnt + 1) + 1);
             }
 
           }
