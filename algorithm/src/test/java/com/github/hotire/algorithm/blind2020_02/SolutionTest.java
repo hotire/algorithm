@@ -1,25 +1,35 @@
 package com.github.hotire.algorithm.blind2020_02;
 
-import org.assertj.core.api.Assertions;
-import org.junit.jupiter.api.Test;
+import static org.assertj.core.api.Assertions.assertThat;
 
-/**
- * @author : hotire
- */
+import java.util.stream.Stream;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+
 class SolutionTest {
 
-  @Test
-  void solution() {
+  @ParameterizedTest
+  @MethodSource("provideTextOfBracket")
+  void solution(final String text, final String expected) {
     // When
     final Solution solution = new Solution();
 
     // When
-    String result = solution.solution("(()())()");
+    final String result = solution.solution(text);
 
     // Then
-    Assertions.assertThat(result).isEqualTo("(()())()");
+    assertThat(result).isEqualTo(expected);
+  }
 
-    System.out.println(solution.solution(")("));
-    System.out.println(solution.solution("(()())()"));
+  private static Stream<Arguments> provideTextOfBracket() {
+    return Stream.of(
+        Arguments.of("(()())()", "(()())()"),
+        Arguments.of(")(", "()"),
+        Arguments.of("()))((()", "()(())()"),
+        Arguments.of(")()()()(", "(((())))"),
+        Arguments.of(")))(((", "()(())")
+    );
   }
 }
