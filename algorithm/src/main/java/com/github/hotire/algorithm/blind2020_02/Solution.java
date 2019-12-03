@@ -7,7 +7,7 @@ import java.util.Map;
 
 class Solution {
 
-  private Map<Character, Integer> bracketMap = Map.of('(', 1, ')', -1);
+  private final Map<Character, Integer> bracketMap = Map.of('(', 1, ')', -1);
 
   public String solution(String p) {
     if (p.isBlank()) {
@@ -35,7 +35,7 @@ class Solution {
 
   protected List<String> partition(String s) {
     int sum = 0;
-    List<String> strings = new ArrayList<>();
+    final List<String> strings = new ArrayList<>();
 
     for (int i = 0; i < s.length(); i++) {
       sum += bracketMap.get(s.charAt(i));
