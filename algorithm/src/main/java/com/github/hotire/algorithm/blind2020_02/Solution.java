@@ -8,6 +8,7 @@ import java.util.Map;
 class Solution {
 
   private final Map<Character, Integer> bracketMap = Map.of('(', 1, ')', -1);
+  private final Map<Character, Character> reverseMap = Map.of('(', ')', ')','(');
 
   public String solution(String p) {
     if (p.isBlank()) {
@@ -28,7 +29,7 @@ class Solution {
     answer += "(";
     answer += solution(v);
     answer += ")";
-    answer += new StringBuilder(u.substring(1, u.length() - 1)).reverse().toString();
+    answer += reverse(u.substring(1, u.length() - 1));
 
     return answer;
   }
@@ -57,5 +58,13 @@ class Solution {
       }
     }
     return true;
+  }
+
+  protected String reverse(String s) {
+    final StringBuilder stringBuilder = new StringBuilder();
+    for (char c : s.toCharArray()) {
+      stringBuilder.append(reverseMap.get(c));
+    }
+    return stringBuilder.toString();
   }
 }
