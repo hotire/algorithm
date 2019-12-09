@@ -28,7 +28,6 @@ public class Solution {
     return false;
   }
 
-
   protected boolean isUnlock(final int[][] lock, final int[][] key, final int startX, final int startY ) {
     final int[][] background = new int[backgroundSize][backgroundSize];
 
@@ -49,7 +48,6 @@ public class Solution {
 
     return true;
   }
-
 
   protected void cycle(final int[][] arr) {
     final int n = arr.length;
