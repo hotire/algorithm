@@ -16,7 +16,7 @@ public class Trie {
     for (int i = 0; i < word.length(); i++) {
       current = current.getChildren().computeIfAbsent(word.charAt(i), c -> new TrieNode());
     }
-    current.setEndOfWord(true);
+    current.setEndOfWord(false);
   }
 
   public boolean delete(String word) {
