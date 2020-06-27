@@ -1,4 +1,4 @@
-package com.github.hotire.algorithm.blind2020_04;
+package com.github.hotire.algorithm.kakao.blind2020.blind2020_04;
 
 import java.util.Arrays;
 import java.util.Collections;

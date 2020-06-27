@@ -1,8 +1,6 @@
-package com.github.hotire.algorithm.blind2020_01;
+package com.github.hotire.algorithm.kakao.blind2020.blind2020_01;
 
 
-import java.util.Map;
-import java.util.function.Predicate;
 import java.util.stream.IntStream;
 
 class Solution {

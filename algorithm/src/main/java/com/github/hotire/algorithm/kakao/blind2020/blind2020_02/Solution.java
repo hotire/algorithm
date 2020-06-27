@@ -1,4 +1,4 @@
-package com.github.hotire.algorithm.blind2020_02;
+package com.github.hotire.algorithm.kakao.blind2020.blind2020_02;
 
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.github.hotire.algorithm.blind2020_03;
+package com.github.hotire.algorithm.kakao.blind2020.blind2020_03;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
