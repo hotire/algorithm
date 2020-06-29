@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/Samsung/Samsung.iml" filepath="$PROJECT_DIR$/Samsung/Samsung.iml" />
       <module fileurl="file://$PROJECT_DIR$/algo/algo.iml" filepath="$PROJECT_DIR$/algo/algo.iml" />
       <module fileurl="file://$PROJECT_DIR$/algo2/algo2.iml" filepath="$PROJECT_DIR$/algo2/algo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/algorithm.iml" filepath="$PROJECT_DIR$/algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/kakao/kakao.iml" filepath="$PROJECT_DIR$/kakao/kakao.iml" />
     </modules>

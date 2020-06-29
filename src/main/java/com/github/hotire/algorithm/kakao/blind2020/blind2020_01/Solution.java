@@ -1,6 +1,5 @@
 package com.github.hotire.algorithm.kakao.blind2020.blind2020_01;
 
-
 import java.util.stream.IntStream;
 
 class Solution {
@@ -8,7 +7,7 @@ class Solution {
   public int solution(String s) {
     final int totalLength = s.length();
     return IntStream.rangeClosed(1, totalLength/2)
-        .map(i -> {
+                    .map(i -> {
           int length = totalLength;
 
           for (int index = 0; index + i <= totalLength;) {
@@ -26,8 +25,8 @@ class Solution {
           }
           return length;
         })
-        .min()
-        .orElse(totalLength);
+                    .min()
+                    .orElse(totalLength);
   }
 
   protected int findCountOfWordRepeated(final String text, final String word, int begin) {
