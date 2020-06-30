@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a4ff7732-710f-4f61-8707-7e24a49b8a77" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/github/hotire/algorithm/kakao/blind2020/blind2020_01/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/github/hotire/algorithm/kakao/blind2020/blind2020_01/Solution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +114,8 @@
       <workItem from="1575207794238" duration="6830000" />
       <workItem from="1575296779365" duration="793000" />
       <workItem from="1593236517922" duration="188000" />
-      <workItem from="1593443355646" duration="287000" />
+      <workItem from="1593443355646" duration="485000" />
+      <workItem from="1593529673706" duration="8000" />
     </task>
     <servers />
   </component>
