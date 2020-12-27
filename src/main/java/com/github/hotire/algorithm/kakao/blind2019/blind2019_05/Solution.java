@@ -39,7 +39,7 @@ class BinaryTree {
     }
 
     public BinaryTree(List<TreeNode> nodes) {
-        order = new int[2][nodes.size()];
+        int[][] order = new int[2][nodes.size()];
         nodes.forEach(node -> root = add(root, node));
         preOrder(root);
         postOrder(root);
