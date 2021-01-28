@@ -45,3 +45,7 @@ https://blog.naver.com/gngh0101/221732240728
 ### 가사 검색 
 
 https://blog.naver.com/gngh0101/221753587637
+
+## 2021 KAKAO BLIND RECRUITMENT
+
+https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/
