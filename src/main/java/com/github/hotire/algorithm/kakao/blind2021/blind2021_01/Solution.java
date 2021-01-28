@@ -1,4 +1,4 @@
-package com.github.hotire.algorithm.kakao.coding2021.coding2021_01;
+package com.github.hotire.algorithm.kakao.blind2021.blind2021_01;
 
 public class Solution {
     private String regex = "[^\\p{IsAlphabetic}\\p{IsDigit}-_.]";
