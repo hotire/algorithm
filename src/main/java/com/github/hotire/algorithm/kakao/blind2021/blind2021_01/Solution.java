@@ -1,11 +1,11 @@
 package com.github.hotire.algorithm.kakao.blind2021.blind2021_01;
 
 public class Solution {
-    private String regex = "[^\\p{IsAlphabetic}\\p{IsDigit}-_.]";
+    private static final String REGEX = "[^\\p{IsAlphabetic}\\p{IsDigit}-_.]";
 
     public String solution(String newId) {
         // 1, 2
-        newId = newId.toLowerCase().replaceAll(regex, "");
+        newId = newId.toLowerCase().replaceAll(REGEX, "");
 
         // 3
         final StringBuilder sb = new StringBuilder();
