@@ -1,6 +1,10 @@
 package com.github.hotire.algorithm.kakao.blind2019.blind2019_03;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+import java.util.Stack;
 
 public class Solution {
     public int solution(String[][] relation) {
