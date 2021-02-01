@@ -28,6 +28,10 @@ hotire blog : https://blog.naver.com/gngh0101
 
 ## 코딩테스트
 
+## 2019 KAKAO BLIND RECRUITMENT
+
+https://tech.kakao.com/2018/09/21/kakao-blind-recruitment-for2019-round-1/
+
 ## 2020 KAKAO BLIND RECRUITMENT
 
 ### 문자열 압축 
