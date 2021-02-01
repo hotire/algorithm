@@ -54,3 +54,8 @@ https://tech.kakao.com/2021/01/25/2021-kakao-recruitment-round-1/
 ### 신규 아이디 추천
 
 https://blog.naver.com/gngh0101/222223747542
+
+
+### 메뉴 리뉴얼
+
+https://blog.naver.com/gngh0101/222226840043
