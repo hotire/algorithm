@@ -1,7 +1,8 @@
 package com.github.hotire.algorithm.base.src.base;
 
+import java.util.List;
 
-public class AlgorithmUtils {	
+public class AlgorithmUtils {
 	private AlgorithmUtils(){};
 	private static AlgorithmUtils instance = new AlgorithmUtils();
 	public static AlgorithmUtils getInstance() {
@@ -105,6 +106,41 @@ public class AlgorithmUtils {
 			for (int j = i + i; j < a.length; j +=i) 
 				a[j] = 0;
 		}
+	}
+
+	/**
+	 * lowerBoundSearch
+	 */
+	public int lowerBoundSearch(int[] arr, int k) {
+		int left = 0;
+		int right = arr.length;
+
+		while (left < right) {
+			int m = (left + right) / 2;
+			if (arr[m] < k) {
+				left = m + 1;
+			} else {
+				right = m;
+			}
+		}
+
+		return right;
+	}
+
+	public <T extends Comparable<T>> int lowerBoundSearch(List<T> list, T k) {
+		int left = 0;
+		int right = list.size();
+
+		while (left < right) {
+			int m = (left + right) / 2;
+			if (list.get(m).compareTo(k) < 0) {
+				left = m + 1;
+			} else {
+				right = m;
+			}
+		}
+
+		return right;
 	}
 }
 

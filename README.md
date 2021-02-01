@@ -32,6 +32,26 @@ hotire blog : https://blog.naver.com/gngh0101
 
 https://tech.kakao.com/2018/09/21/kakao-blind-recruitment-for2019-round-1/
 
+### 오픈채팅방
+
+https://blog.naver.com/gngh0101/221364285852
+
+### 실패율 
+
+https://blog.naver.com/gngh0101/221364692698
+
+### 후보키 
+
+https://blog.naver.com/gngh0101/221365673218
+
+### 먹방 라이브 
+
+https://blog.naver.com/gngh0101/221367932800
+
+### 길 찾기 
+
+https://blog.naver.com/gngh0101/221371928714 
+
 ## 2020 KAKAO BLIND RECRUITMENT
 
 ### 문자열 압축 
