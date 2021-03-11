@@ -1,7 +1,7 @@
 package com.github.hotire.algorithm.naver.n_2021.algo_03;
 
 public class Solution {
-    int solution(int[] A) {
+    public int solution(int[] A) {
         int max = 0;
         int sum = 0;
         for (int i = 0; i < A.length; i++) {
