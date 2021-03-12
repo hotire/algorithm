@@ -9,7 +9,6 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 class SolutionTest {
-
     private static Stream<Arguments> provide()  {
         return Stream.of(Arguments.of(6, 4, 6, 2, new int[][] { {4, 1, 10}, {3, 5, 24}, {5, 6, 2}, {3, 1, 41}, {5, 1, 24}, {4, 6, 50}, {2, 4, 66}, {2, 3, 22}, {1, 6, 25} }, 82),
                          Arguments.of(7, 3, 4, 1, new int[][] { {5, 7, 9}, {4, 6, 4}, {3, 6, 1}, {3, 2, 3}, {2, 1, 6} }, 14),

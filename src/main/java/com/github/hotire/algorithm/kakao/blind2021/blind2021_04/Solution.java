@@ -3,7 +3,7 @@ package com.github.hotire.algorithm.kakao.blind2021.blind2021_04;
 import java.util.stream.IntStream;
 
 public class Solution {
-    public int solution(int n, int s, int a, int b, int[][] fares) {
+    public int solution(final int n, final int s, final int a, final int b, final int[][] fares) {
         final int[][] floydWarshall = floydWarshall(n , fares);
         return IntStream.range(0, n)
                         .map(index -> floydWarshall[s - 1][index] + floydWarshall[index][a - 1] + floydWarshall[index][b - 1])
