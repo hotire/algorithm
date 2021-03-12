@@ -85,3 +85,7 @@ https://blog.naver.com/gngh0101/222226840043
 ### 순위 검색
 
 https://blog.naver.com/gngh0101/222229691785
+
+### 합승 택시 요금
+
+https://blog.naver.com/gngh0101/222272570381
