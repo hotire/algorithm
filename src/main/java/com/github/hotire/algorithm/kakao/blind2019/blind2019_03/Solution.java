@@ -15,12 +15,14 @@ public class Solution {
 
 class CandidateKey {
     boolean[] columns = new boolean[8];
+
     @Override
     public boolean equals(Object obj) {
-        if (! (obj instanceof CandidateKey) ) return false;
-        else {
+        if (!(obj instanceof CandidateKey)) {
+            return false;
+        } else {
             CandidateKey candidateKey = ((CandidateKey) obj);
-            for (int i = 0 ; i < columns.length; i++) {
+            for (int i = 0; i < columns.length; i++) {
                 if (columns[i] && !candidateKey.columns[i]) {
                     return false;
                 }
@@ -29,6 +31,7 @@ class CandidateKey {
         }
     }
 }
+
 class Combination {
     private static String array[][];
     private static List<CandidateKey> ans = new ArrayList<>();
@@ -44,6 +47,7 @@ class Combination {
             st.pop();
         }
     }
+
     private static void findCandidateKey(Stack<Integer> st) {
         Set<String> set = new HashSet<>();
         CandidateKey candidateKey = new CandidateKey();
@@ -57,11 +61,14 @@ class Combination {
         }
         if (set.size() == array.length) {
             for (CandidateKey t : ans) {
-                if (t.equals(candidateKey)) return;
+                if (t.equals(candidateKey)) {
+                    return;
+                }
             }
             ans.add(candidateKey);
         }
     }
+
     public static int solution(String[][] relation) {
         Stack<Integer> st = new Stack<Integer>();
         array = relation;

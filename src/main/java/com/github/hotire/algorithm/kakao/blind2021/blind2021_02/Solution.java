@@ -18,9 +18,9 @@ public class Solution {
         Arrays.stream(orders).forEach(order -> {
             int n = order.length();
             final Set<Character> sb = new TreeSet<>();
-            for (int i = 0; i< (1 << n); i++) {
+            for (int i = 0; i < (1 << n); i++) {
                 for (int j = 0; j < n; j++) {
-                    if ( ( i & (1 << j)) > 0) {
+                    if ((i & (1 << j)) > 0) {
                         sb.add(order.charAt(j));
                     }
                 }

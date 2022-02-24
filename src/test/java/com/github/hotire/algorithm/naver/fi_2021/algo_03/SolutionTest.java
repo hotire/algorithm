@@ -13,8 +13,8 @@ class SolutionTest {
         Solution solution = new Solution();
 
         // expected
-        Assertions.assertThat(solution.solution(new int[]{ 1, 2, -3, 4, 5, -6})).isEqualTo(9);
-        Assertions.assertThat(solution.solution(new int[]{-8, 3, 0, 5, -3, 12})).isEqualTo(12);
-        Assertions.assertThat(solution.solution(new int[]{-1, 2, 1, 2, 0, 2, 1, -3, 4, 3, 0, -1})).isEqualTo(8);
+        Assertions.assertThat(solution.solution(new int[] { 1, 2, -3, 4, 5, -6 })).isEqualTo(9);
+        Assertions.assertThat(solution.solution(new int[] { -8, 3, 0, 5, -3, 12 })).isEqualTo(12);
+        Assertions.assertThat(solution.solution(new int[] { -1, 2, 1, 2, 0, 2, 1, -3, 4, 3, 0, -1 })).isEqualTo(8);
     }
 }

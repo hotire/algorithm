@@ -12,10 +12,10 @@ class SolutionTest {
 
     private static Stream<Arguments> provideTest() {
         return Stream.of(Arguments.of("...!@BaT#*..y.abcdefghijklm", "bat.y.abcdefghi"),
-                         Arguments.of( "z-+.^.", "z--"),
-                         Arguments.of( "=.=", "aaa"),
-                         Arguments.of( "123_.def", "123_.def"),
-                         Arguments.of( "abcdefghijklmn.p", "abcdefghijklmn")
+                         Arguments.of("z-+.^.", "z--"),
+                         Arguments.of("=.=", "aaa"),
+                         Arguments.of("123_.def", "123_.def"),
+                         Arguments.of("abcdefghijklmn.p", "abcdefghijklmn")
         );
     }
 

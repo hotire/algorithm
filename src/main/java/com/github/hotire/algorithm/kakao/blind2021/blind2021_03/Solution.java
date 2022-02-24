@@ -21,16 +21,16 @@ public class Solution {
               .flatMap(it -> Arrays.stream(Career.values()).map(c -> it.copy().setCareer(c)))
               .flatMap(it -> Arrays.stream(SoulFood.values()).map(s -> it.copy().setSoulFood(s)))
               .forEach(it -> applicantSetMap.put(it, applicants.stream()
-                                                           .filter(applicant -> it.getLanguage().equals(applicant))
-                                                           .filter(applicant -> it.getDeveloperType().equals(applicant))
-                                                           .filter(applicant -> it.getCareer().equals(applicant))
-                                                           .filter(applicant -> it.getSoulFood().equals(applicant))
-                                                           .mapToInt(Applicant::getScore)
-                                                           .sorted()
-                                                           .toArray()));
+                                                               .filter(applicant -> it.getLanguage().equals(applicant))
+                                                               .filter(applicant -> it.getDeveloperType().equals(applicant))
+                                                               .filter(applicant -> it.getCareer().equals(applicant))
+                                                               .filter(applicant -> it.getSoulFood().equals(applicant))
+                                                               .mapToInt(Applicant::getScore)
+                                                               .sorted()
+                                                               .toArray()));
         return Arrays.stream(query)
                      .map(it -> Applicant.create(it.split("and")))
-                     .mapToInt(q -> lowerBoundSearchCount(applicantSetMap.getOrDefault(q, new int[]{}), q.getScore()))
+                     .mapToInt(q -> lowerBoundSearchCount(applicantSetMap.getOrDefault(q, new int[] {}), q.getScore()))
                      .toArray();
     }
 
@@ -57,6 +57,7 @@ public class Solution {
                 return true;
             }
         };
+
         public static Language lookup(String name) {
             if ("-".equals(name)) {
                 return NONE;
@@ -76,6 +77,7 @@ public class Solution {
                 return true;
             }
         };
+
         public static DeveloperType lookup(String name) {
             if ("-".equals(name)) {
                 return NONE;
@@ -95,6 +97,7 @@ public class Solution {
                 return true;
             }
         };
+
         public static Career lookup(String name) {
             if ("-".equals(name)) {
                 return NONE;
@@ -114,6 +117,7 @@ public class Solution {
                 return true;
             }
         };
+
         public static SoulFood lookup(String name) {
             if ("-".equals(name)) {
                 return NONE;

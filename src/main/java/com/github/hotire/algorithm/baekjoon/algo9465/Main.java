@@ -46,8 +46,12 @@ public class Main {
     }
 
     public static long go(int n, int index) {
-        if (index < 0) return 0;
-        if (dp[n][index] != 0) return dp[n][index];
+        if (index < 0) {
+            return 0;
+        }
+        if (dp[n][index] != 0) {
+            return dp[n][index];
+        }
 
         dp[n][index] = (n == 0) ? go(1, index - 1) : go(0, index - 1);
 

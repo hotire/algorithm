@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 class TreeNode implements Comparable<TreeNode> {
     public int x;
     public int y;
@@ -17,6 +16,7 @@ class TreeNode implements Comparable<TreeNode> {
         this.y = y;
         this.depth = depth;
     }
+
     @Override
     public int compareTo(TreeNode o) {
         return Integer.compare(this.y, o.y) == 0 ? Integer.compare(this.x, o.x) : -Integer.compare(this.y, o.y);
@@ -48,14 +48,18 @@ class BinaryTree {
     }
 
     private void preOrder(TreeNode node) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
         preTree.add(node.depth);
         preOrder(node.left);
         preOrder(node.right);
     }
 
     private void postOrder(TreeNode node) {
-        if (node == null) return;
+        if (node == null) {
+            return;
+        }
         postOrder(node.left);
         postOrder(node.right);
         postTree.add(node.depth);
@@ -76,8 +80,8 @@ public class Solution {
         BinaryTree bt = new BinaryTree(nodes);
         int[][] ans = new int[2][nodeinfo.length];
 
-        ans[0] = bt.preTree.stream().mapToInt(i->i).toArray();
-        ans[1] = bt.postTree.stream().mapToInt(i->i).toArray();
+        ans[0] = bt.preTree.stream().mapToInt(i -> i).toArray();
+        ans[1] = bt.postTree.stream().mapToInt(i -> i).toArray();
 
         return ans;
     }

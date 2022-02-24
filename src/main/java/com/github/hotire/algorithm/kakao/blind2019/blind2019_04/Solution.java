@@ -14,7 +14,7 @@ public class Solution {
 
     public static void main(String args[]) {
         Solution s = new Solution();
-        s.solution(new int[]{3,1,2},5);
+        s.solution(new int[] { 3, 1, 2 }, 5);
 
         Set<Integer> set = new TreeSet<>(Collections.reverseOrder());
 
@@ -34,10 +34,10 @@ class Josephus {
     private List<Food> list = new ArrayList<>();
     private PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
 
-    Josephus (int[] foodTimes, long K) {
+    Josephus(int[] foodTimes, long K) {
         this.K = K;
         for (int i = 0; i < foodTimes.length; i++) {
-            list.add(new Food(foodTimes[i], i+1));
+            list.add(new Food(foodTimes[i], i + 1));
             priorityQueue.add(foodTimes[i]);
         }
     }
@@ -47,27 +47,34 @@ class Josephus {
         while (!priorityQueue.isEmpty()) {
             int value = priorityQueue.poll();
             if (list.size() <= K) {
-                K = K - (list.size()* (value-index));
+                K = K - (list.size() * (value - index));
                 Set<Integer> set = new TreeSet<>(Collections.reverseOrder());
                 for (int i = 0; i < list.size(); i++) {
-                    if (list.get(i).time <= value ) set.add(i);
+                    if (list.get(i).time <= value) {
+                        set.add(i);
+                    }
                 }
-                for (int i : set) list.remove(i);
+                for (int i : set) {
+                    list.remove(i);
+                }
 
-                if (list.isEmpty()) return -1;
+                if (list.isEmpty()) {
+                    return -1;
+                }
 
                 index = value;
             } else {
                 break;
             }
         }
-        return list.get((int)K).index;
+        return list.get((int) K).index;
     }
 }
 
 class Food {
     int time;
     int index;
+
     public Food(int time, int index) {
         this.time = time;
         this.index = index;

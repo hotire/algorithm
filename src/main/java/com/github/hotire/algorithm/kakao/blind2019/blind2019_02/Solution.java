@@ -15,24 +15,24 @@ public class Solution {
 
     public static void main(String args[]) {
         Solution solution = new Solution();
-        solution.solution(5,new int[]{2, 1, 2, 6, 2, 4, 3, 3});
+        solution.solution(5, new int[] { 2, 1, 2, 6, 2, 4, 3, 3 });
     }
 
     public int[] solution(int N, int[] stages) {
 
-        Map<Integer,Integer> frequency = new HashMap<>();
-        Map<Integer,Double> failureRate = new HashMap<>();
+        Map<Integer, Integer> frequency = new HashMap<>();
+        Map<Integer, Double> failureRate = new HashMap<>();
 
         for (int stage : stages) {
             int count = frequency.containsKey(stage) ? frequency.get(stage) + 1 : 1;
-            frequency.put(stage,count);
+            frequency.put(stage, count);
         }
 
         int NumberOfUsers = stages.length;
         for (int i = 1; i <= N; i++) {
             if (frequency.containsKey(i)) {
                 int cnt = frequency.get(i);
-                failureRate.put(i,  (double) cnt / NumberOfUsers);
+                failureRate.put(i, (double) cnt / NumberOfUsers);
                 NumberOfUsers -= cnt;
             } else {
                 failureRate.put(i, 0.0);
@@ -47,7 +47,7 @@ public class Solution {
         return answer;
     }
 
-    public static List<Integer> sortByValue(final Map<Integer,Double> map) {
+    public static List<Integer> sortByValue(final Map<Integer, Double> map) {
         List<Integer> result = new ArrayList();
         result.addAll(map.keySet());
         Collections.sort(result, (Comparator) (o1, o2) -> {

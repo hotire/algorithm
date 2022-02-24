@@ -4,20 +4,19 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
 
-
 class SolutionTest {
 
-  @Test
-  void solution() {
-    // Given
-    final int[][] lock = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
-    final int[][] key = {{0, 0, 0}, {1, 0, 0}, {0, 1, 1}};
-    final Solution solution = new Solution();
+    @Test
+    void solution() {
+        // Given
+        final int[][] lock = { { 1, 1, 1 }, { 1, 1, 0 }, { 1, 0, 1 } };
+        final int[][] key = { { 0, 0, 0 }, { 1, 0, 0 }, { 0, 1, 1 } };
+        final Solution solution = new Solution();
 
-    // When
-    final boolean result = solution.solution(key, lock);
+        // When
+        final boolean result = solution.solution(key, lock);
 
-    // Then
-    assertThat(result).isTrue();
-  }
+        // Then
+        assertThat(result).isTrue();
+    }
 }

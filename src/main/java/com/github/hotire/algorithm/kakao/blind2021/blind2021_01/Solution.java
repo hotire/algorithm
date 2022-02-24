@@ -9,9 +9,9 @@ public class Solution {
 
         // 3
         final StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < newId.length() - 1 ; i++) {
+        for (int i = 0; i < newId.length() - 1; i++) {
             sb.append(newId.charAt(i));
-            if (newId.charAt(i) == newId.charAt(i +1) && newId.charAt(i) == '.') {
+            if (newId.charAt(i) == newId.charAt(i + 1) && newId.charAt(i) == '.') {
                 sb.deleteCharAt(sb.length() - 1);
             }
         }
@@ -21,7 +21,7 @@ public class Solution {
         if (sb.length() != 0 && sb.charAt(0) == '.') {
             sb.deleteCharAt(0);
         }
-        if (sb.length() != 0 &&  sb.charAt(sb.length() - 1) == '.') {
+        if (sb.length() != 0 && sb.charAt(sb.length() - 1) == '.') {
             sb.deleteCharAt(sb.length() - 1);
         }
 
@@ -39,7 +39,7 @@ public class Solution {
         }
 
         // 7
-        for (int i = sb.length(); i < 3 ; i ++) {
+        for (int i = sb.length(); i < 3; i++) {
             sb.append(sb.charAt(sb.length() - 1));
         }
 

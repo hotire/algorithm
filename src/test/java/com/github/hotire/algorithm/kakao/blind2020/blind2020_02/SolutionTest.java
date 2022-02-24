@@ -8,29 +8,28 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-
 class SolutionTest {
 
-  @ParameterizedTest
-  @MethodSource("provideTextOfBracket")
-  void solution(final String text, final String expected) {
-    // When
-    final Solution solution = new Solution();
+    @ParameterizedTest
+    @MethodSource("provideTextOfBracket")
+    void solution(final String text, final String expected) {
+        // When
+        final Solution solution = new Solution();
 
-    // When
-    final String result = solution.solution(text);
+        // When
+        final String result = solution.solution(text);
 
-    // Then
-    assertThat(result).isEqualTo(expected);
-  }
+        // Then
+        assertThat(result).isEqualTo(expected);
+    }
 
-  private static Stream<Arguments> provideTextOfBracket() {
-    return Stream.of(
-        Arguments.of("(()())()", "(()())()"),
-        Arguments.of(")(", "()"),
-        Arguments.of("()))((()", "()(())()"),
-        Arguments.of(")()()()(", "(((())))"),
-        Arguments.of(")))(((", "()(())")
-    );
-  }
+    private static Stream<Arguments> provideTextOfBracket() {
+        return Stream.of(
+                Arguments.of("(()())()", "(()())()"),
+                Arguments.of(")(", "()"),
+                Arguments.of("()))((()", "()(())()"),
+                Arguments.of(")()()()(", "(((())))"),
+                Arguments.of(")))(((", "()(())")
+        );
+    }
 }
