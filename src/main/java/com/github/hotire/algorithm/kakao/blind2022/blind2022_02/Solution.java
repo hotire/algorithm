@@ -1,6 +1,5 @@
 package com.github.hotire.algorithm.kakao.blind2022.blind2022_02;
 
-import java.math.BigInteger;
 import java.util.HashMap;
 import java.util.Map;
 
