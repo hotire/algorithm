@@ -3,7 +3,9 @@
 https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/
 
 
-## 02
+## 02 k 진수에서 소수의 개수 구하기
+
+https://blog.naver.com/gngh0101/222659605684
 
 ### 소수 구하기 
 
