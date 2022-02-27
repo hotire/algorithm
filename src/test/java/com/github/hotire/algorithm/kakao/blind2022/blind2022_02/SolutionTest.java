@@ -1,23 +1,35 @@
 package com.github.hotire.algorithm.kakao.blind2022.blind2022_02;
 
-import java.math.BigInteger;
+import static org.assertj.core.api.Assertions.assertThat;
 
-import org.junit.jupiter.api.Test;
+import java.util.stream.Stream;
+
+import org.junit.jupiter.api.DynamicTest;
+import org.junit.jupiter.api.TestFactory;
 
 class SolutionTest {
 
-    @Test
-    void solution() {
-//        final int it = (Math.min(99, Integer.MAX_VALUE-1)+1)/2;
+    @TestFactory
+    Stream<DynamicTest> solution() {
+        class TestCase {
+            private final int n;
+            private final int k;
+            private final int expected;
 
+            TestCase(final int n, final int k, final int expected) {
+                this.n = n;
+                this.k = k;
+                this.expected = expected;
+            }
+        }
+        final Solution solution = new Solution();
 
-//        System.out.println(it);
-        System.out.println(Long.parseLong("10"));
-        BigInteger.valueOf(1L).isProbablePrime(1);
-
-        final int result = new Solution().solution(11, 10);
-        System.out.println(result);
+        return Stream.of(
+                new TestCase(437674, 3, 3),
+                new TestCase(110011, 10, 2)
+        ).map(it -> DynamicTest.dynamicTest("solution", () -> {
+            // expected
+            assertThat(solution.solution(it.n, it.k)).isEqualTo(it.expected);
+        }));
     }
-
-
 }
