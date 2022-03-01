@@ -2,6 +2,10 @@
 
 https://tech.kakao.com/2022/01/14/2022-kakao-recruitment-round-1/
 
+### 01 신고 결과 받기
+
+https://blog.naver.com/gngh0101/222657197283
+
 
 ## 02 k 진수에서 소수의 개수 구하기
 
