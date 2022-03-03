@@ -12,7 +12,7 @@ import java.util.TreeMap;
 
 public class Solution {
 
-    public static class Record implements Comparable<Record>{
+    public static class Record {
 
         private static final LocalTime MAX = LocalTime.of(23, 59);
         private final LocalTime time;
@@ -44,20 +44,11 @@ public class Solution {
             this.carId = strings[1];
             this.status = strings[2];
         }
-
-        @Override
-        public int compareTo(final Record o) {
-            final int compare = carId.compareTo(o.carId);
-            if (compare == 0) {
-                return time.compareTo(o.time);
-            }
-            return compare;
-        }
     }
 
     public int[] solution(final int[] fees, final String[] records) {
+
         final Map<String, Optional<Record>> result = Arrays.stream(records).map(it -> new Record(it.split(" ")))
-                                                           .sorted()
                                                            .collect(groupingBy(it -> it.carId,
                                                                                TreeMap::new,
                                                                                reducing((record1, record2) -> {
