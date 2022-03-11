@@ -22,4 +22,8 @@ https://blog.naver.com/gngh0101/222659605684
 
 ### 04 양궁 대회
 
+- 완전 탐색, 중복 조합 문제
+
+- https://blog.naver.com/gngh0101/222666648750
+
 
